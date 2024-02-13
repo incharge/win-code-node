@@ -58,7 +58,7 @@ if not exist .bashrc (
 	echo # If this is a nested bash shell then exit, because settings are inherited,>> .bashrc
 	echo # so there's no need to run .bashrc again>> .bashrc
 	echo if [[ $SHLVL -ne 1 ]]; then>> .bashrc
-	echo 	exit>> .bashrc
+	echo 	return>> .bashrc
 	echo fi>> .bashrc
 )
 
