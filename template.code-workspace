@@ -8,7 +8,7 @@
 		"terminal.integrated.profiles.windows": {
 			"GitBash": {
 				"source": "Git Bash",
-				"path": ["${workspaceFolder}\\win-code-node\\bash.bat"],
+				"path": ["${workspaceFolder}\\bin\\git\\bin\\bash.exe"],
 				"icon": "terminal-bash",
 				"env": {}
 			  }
