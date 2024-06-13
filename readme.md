@@ -17,6 +17,14 @@ Helper scripts are installed to the `win-code-node` subfolder.
 To start VS Code, from Windows Explorer or a command prompt run `win-code-node\vscode.bat`  
 To start a bash shell, from Windows Explorer or a command prompt run `win-code-node\bash.bat`  
 
+## Upgrade VScode
+When VScode notifies that a new version is available:
+- Close VScode
+- Start a bash prompt
+- Delete or rename `installers/VSCode-win32-x64.zip`
+- Delete or rename `bin/vscode`
+- Run `win-code-node/install-vscode.sh`
+
 ## What is installed?
 win-code-node installs the following
 - [Git-for-windows](https://github.com/git-for-windows/git), which includes bash
