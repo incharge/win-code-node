@@ -20,7 +20,7 @@ else
 
 	if [ -f *.code-workspace ];
 	then
-		echo Using existing VS Code workspace: `*.code-workspace`
+		echo Using existing VS Code workspace: `ls *.code-workspace`
 	else
 		echo Use win-code-node VS Code workspace template
 		cp win-code-node/template.code-workspace ./this.code-workspace
