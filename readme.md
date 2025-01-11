@@ -12,6 +12,10 @@ curl -OJ https://raw.githubusercontent.com/incharge/win-code-node/main/bootstrap
 .\bootstrap.bat
 ```
 
+If the following error is displayed, then try disabling any anti-virus software that is blocking internet access e.g. `AVG WebShield`
+```
+curl: (35) schannel: next InitializeSecurityContext failed: CRYPT_E_NO_REVOCATION_CHECK (0x80092012) - The revocation function was unable to check revocation for the certificate.
+```
 ## Start a node enabled bash shell and VS Code
 Helper scripts are installed to the `win-code-node` subfolder.  
 To start VS Code, from Windows Explorer or a command prompt run `win-code-node\vscode.bat`  
