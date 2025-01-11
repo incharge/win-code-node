@@ -1,9 +1,20 @@
 #!/usr/bin/env bash
 
-echo Installing node
+echo 'Installing node'
 nvm install node
 
-./install-vscode.sh
+if [[ $# -eq 0 ]]
+then
+    # Install VS Code
+    ./install-vscode.sh
 
-rem Start VS Code
-source win-code-node/vscode.sh
+    # Start VS Code for the first time
+    source win-code-node/vscode.sh
+elif [[ "$1" == '--nocode' ]]
+then
+    # Start a bash shell for the first time
+    bash
+else
+    echo "Invalid parameter: $1"
+fi
+

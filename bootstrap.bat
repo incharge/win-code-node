@@ -87,4 +87,4 @@ rem Run a bash shell to install nvm
 bin\git\bin\bash -c "source win-code-node/install-nvm.sh; exit"
 
 rem Run a bash shell to install node and VS Code
-bin\git\bin\bash -c "source win-code-node/install-code-node.sh"
+bin\git\bin\bash -c "source win-code-node/install-code-node.sh %1"
